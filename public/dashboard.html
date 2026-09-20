@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skovio - Dashboard</title>
+    <meta name="description" content="Your Skovio Dashboard">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container dashboard-container">
+        <div class="card" style="max-width: 800px; width: 100%;">
+            <div class="dashboard-header">
+                <div class="user-info">
+                    <div class="avatar" id="user-initial">U</div>
+                    <div>
+                        <h2>Welcome back!</h2>
+                        <p id="user-email" style="color: var(--text-muted); font-size: 14px;">Loading...</p>
+                    </div>
+                </div>
+                <button id="btn-logout" class="btn btn-outline">Logout</button>
+            </div>
+            
+            <div style="text-align: center; padding: 40px 0;">
+                <h1 style="font-size: 48px; margin-bottom: 20px; background: linear-gradient(to right, #10b981, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">You're in! 🎉</h1>
+                <p style="color: var(--text-muted); line-height: 1.6;">
+                    You have successfully registered, verified your email using OTP, and logged into the secure dashboard.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>

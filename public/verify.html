@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skovio - Verify OTP</title>
+    <meta name="description" content="Verify your email address">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Verify Email</h1>
+                <p>We've sent a 6-digit OTP to <strong id="verify-email-display">your email</strong>. Please check your Ethereal Email logs in the console to get the code.</p>
+            </div>
+            
+            <div id="alert" class="alert"></div>
+
+            <form id="verify-form">
+                <div class="form-group">
+                    <label for="otp">Enter OTP</label>
+                    <input type="text" id="otp" name="otp" required placeholder="123456" pattern="[0-9]{6}" maxlength="6" style="text-align: center; font-size: 24px; letter-spacing: 8px;">
+                </div>
+                
+                <button type="submit" id="btn-verify" class="btn">
+                    <span class="spinner"></span>
+                    <span class="btn-text">Verify Account</span>
+                </button>
+            </form>
+            
+            <div class="footer-link">
+                Didn't receive the code? <br><br>
+                <button id="btn-resend" class="btn btn-outline" style="width: 100%; display: inline-block;">Resend OTP</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
